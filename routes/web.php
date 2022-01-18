@@ -17,15 +17,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        "title" => "Home"
+    ]);
 });
 Route::get('/about', function () {
     return view('about', [
+    "title" => "About",
     "nama" => "Meiwildan Muhammad Farrel",
     "email" => "3103120133@student.smktelkom-pwt.sch.id",
     "gambar" => "Farrel.jpeg"
     ]);
 });
 Route::get('/gallery', function () {
-    return view('gallery');
+    return view('gallery', [
+        "title" => "Gallery"
+    ]);
 });
