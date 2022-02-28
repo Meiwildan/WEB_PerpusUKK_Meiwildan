@@ -15,6 +15,7 @@
   </div>
   <div class="form-floating mb-3">
   <textarea class="form-control" placeholder="Tinggalkan pesan disini!" id="floatingtextarea2" style="height: 100px" name="pesan"></textarea>
+  <label for="inpupesan" >Pesan</label>
   </div>
   <button type="submit" class="btn btn-primary">Kirim</button>
 </form>
