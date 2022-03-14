@@ -17,7 +17,7 @@
          
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'Gallery') ? 'active' : '' }}" href="/contacts">Contact Us</a>
+          <a class="nav-link {{ ( $title === 'Gallery') ? 'active' : '' }}" href="{{ route('contact.create')}}">Contact Us</a>
          
           </li>
       </ul>
