@@ -8,13 +8,14 @@
                         <div class="row">
                            
                             <div class="col-md-12">
+                                <h2 class="title-1">List Data Buku</h2>
                                 <form class="form-inline" action="{{ route('books.index') }}" method="GET ">
                                     <div class="form-group mb-3">
                                       <input type="search" name="search" class="form-control" placeholder="Search" aria-describedby="password">
                                     </div>
                                     
                                   </form>
-                                    <h2 class="title-1">List Data Buku</h2>
+                                    
                                     <div class="d-flex flex-row-reverse ">
                                         <a href="exportpdf" type="button" class="btn btn-danger ml-3">Export PDF</a>
 
@@ -69,9 +70,6 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
-                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 <!-- MENU SIDEBAR-->
-<aside class="menu-sidebar d-none d-lg-block" style="background-color: #6dd5ed">
-            <div class="logo"  style="background-color:#6dd5ed">
+<aside class="menu-sidebar d-none d-lg-block" style="background-color: #2193b0">
+            <div class="logo"  style="background-color:#2193b0">
                 <a href="#">
                     <img src="../../fotoBuku/reado.png" width="180" alt="..." />
                 </a>

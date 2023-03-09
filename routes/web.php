@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [DashboardController::class, 'index']);
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard.index');      
 
 Route::get('/books/detailBuku/{id}', [BukuController::class, 'detail'])->name('books.detail');
 
