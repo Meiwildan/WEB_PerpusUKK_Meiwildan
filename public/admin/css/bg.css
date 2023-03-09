@@ -1,0 +1,33 @@
+.big-banner{
+    background-image: url('../../fotoBuku/perpus2.jpg');
+    background-size: 100%;
+}
+.bg-color{
+    background-color: black;
+}
+.bg-login{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px solid rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .big-banner{
+
+    background-position: center center;
+
+
+    background-position: center top;
+
+
+    background-position: center bottom;
+
+    background-image: url('../../fotoBuku/perpus1.jpg');
+} */

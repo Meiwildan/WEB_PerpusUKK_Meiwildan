@@ -4,13 +4,18 @@
 <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
+                        
                         <div class="row">
+                            
                             <div class="col-md-12">
+                                
                                 <div class="overview-wrap">
+                                    
                                     <h2 class="title-1">Contact Us Data</h2>
                                     <button class="au-btn au-btn-icon au-btn--blue">
                                         <i class="zmdi zmdi-plus"></i>add item</button>
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="row m-t-30">
@@ -35,9 +40,9 @@
                                                 <td> {{ $contact->email}}</td>
                                                 <td> {{ $contact->pesan}}</td>
                                                 <td>
-                                                    <a href="{{ route('contact.edit', $contact->id)}}"><i class="fas fa-edit"></i></a>
+                                                    <a href="{{ route('contacts.edit', $contact->id)}}"><i class="fas fa-edit"></i></a>
                                                     |
-                                                    <a href="{{ route('contact.destroy', $contact->id)}}"><i class="fas fa-trash" style="color:red"></i></a>
+                                                    <a href="{{ route('contacts.destroy', $contact->id)}}"><i class="fas fa-trash" style="color:red"></i></a>
                                                 </td>
                                             </tr>
                                             @endforeach

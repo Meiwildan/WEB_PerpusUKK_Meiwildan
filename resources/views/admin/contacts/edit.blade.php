@@ -12,7 +12,7 @@
                                         <strong>Edit Form</strong> Contact Us
                                     </div>
                                     <div class="card-body card-block">
-                                        <form action="{{ route('contact.update', $contact->id)}}" method="post" class="">
+                                        <form action="{{ route('contacts.update', $contact->id)}}" method="post" class="">
                                         {{ csrf_field() }}
                                         <div class="form-group">
                                                 <label for="nf-email" class=" form-control-label">Nama</label>
