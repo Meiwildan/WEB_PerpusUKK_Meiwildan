@@ -36,6 +36,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
   <div class="container">
       <a class="navbar-brand" href="#page-top"><img src="../../fotoBuku/reado.png" width="125" alt="..." /></a>
+      <form action="/" method="GET">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <button class="btn btn-success" type="submit" style="background-color: #302b63; border: 2px solid rgba(255, 255, 255, 0.247);">Search</button>
+        </div>
+    </form>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars ms-1"></i>

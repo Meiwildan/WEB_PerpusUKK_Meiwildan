@@ -20,9 +20,9 @@ class BukuController extends Controller
      */
     public function index(Request $request)
     {
-        if ($request->has('search')) 
+        if ($request->has('Search')) 
         {
-        $books = Buku::where('judul_buku', 'LIKE', '%' .$request->search. '%')->paginate(4);
+        $books = Buku::where('judul_buku', 'LIKE', '%' .$request->Search. '%')->paginate(4);
         }
         else
         {

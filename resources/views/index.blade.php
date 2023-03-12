@@ -6,12 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="mb-3" style="color:white">Halaman Beranda</h1>
-                <form action="/" method="GET">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search" name="search">
-                        <button class="btn btn-success" type="submit" id="button-addon2">Search</button>
-                    </div>
-                </form>
+                
             </div>
             @foreach ($books as $book )
             <div class="col-md-3 mt-4">
