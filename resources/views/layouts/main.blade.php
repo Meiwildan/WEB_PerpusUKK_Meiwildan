@@ -11,9 +11,9 @@
     <title >Meiwildan | {{ $title }}</title>
     <link href="{{asset('admin/css/bg.css')}}" rel="stylesheet" media="all">
   </head>
-  <body style="background-color: #302b63">
+  <body style="background-color: #24243e">
  @include('partials.navbar');
-<div class="container">
+<div  class="container">
     @yield('container')
 </div>
     

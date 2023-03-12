@@ -41,7 +41,7 @@
         <i class="fas fa-bars ms-1"></i>
     </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+          {{-- <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
             <li class="nav-item">
               <a class="nav-link {{ ( $title === 'Home') ? 'active' : '' }} " aria-current="page" href="/">Home</a>
             </li>
@@ -56,7 +56,7 @@
               <a class="nav-link {{ ( $title === 'Gallery') ? 'active' : '' }}" aria-current="page" href="{{ route('contacts.create')}}">Contact Us</a>
              
               </li>
-          </ul>
+          </ul> --}}
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="{{route ('login')}}">Login</a>

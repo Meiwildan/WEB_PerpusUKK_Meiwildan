@@ -10,21 +10,17 @@
                             <div class="col-md-12">
                                 <h2 class="title-1">List Data Buku</h2>
                                 <form class="form-inline" action="{{ route('books.index') }}" method="GET ">
-                                    <div class="form-group mb-3">
-                                      <input type="search" name="search" class="form-control" placeholder="Search" aria-describedby="password">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Search" name="Search">
+                                        <button class="btn btn-success" type="submit">Search</button>
                                     </div>
-                                    
+                                    </div>
                                   </form>
-                                    
-                                    <div class="d-flex flex-row-reverse ">
+                                     
                                         <a href="exportpdf" type="button" class="btn btn-danger ml-3">Export PDF</a>
 
-                                    <a href="exportexcel" type="button" class="btn btn-success">Export Excel</a>
-                                    </div>
+                                    <a href="exportexcel" type="button" class="btn btn-success ml-3">Export Excel</a>
                                     
-                                
-                                
-                                
                             </div>
                         </div>
                         <div class="row m-t-30">
@@ -33,13 +29,14 @@
                                 <div class="table-responsive m-b-40">
                                     <table class="table table-borderless table-data3" >
                                         <thead>
-                                            <tr style="background-color:#2193b0">
+                                            <tr style="background-color:#302b63">
                                                 <th>No</th>
                                                 <th nowrap>Judul Buku</th>
-                                                <th npwrap>Jenis Buku</th>
+                                                <th npwrap>Kategori</th>
                                                 <th>Pengarang</th>
-                                                <th nowrap>Tahun Terbit</th>
+                                                <th nowrap>Tahun</th>
                                                 <th>Penerbit</th>
+                                                <th>sinopsis</th>
                                                 <th nowrap>Cover Buku</th>
                                                 <th>Aksi</th>
                                             </tr>
@@ -48,13 +45,14 @@
                                             @foreach ($books as $index => $buku)
                                             <tr>
                                                 <td> {{ $index + 1}}</td>
-                                                <td> {{ $buku->judul_buku}}</td>
+                                                <td nowrap> {{ $buku->judul_buku}}</td>
                                                 <td> {{ $buku->jenis_buku}}</td>
                                                 <td> {{ $buku->pengarang}}</td>
                                                 <td> {{ $buku->tahun_terbit}}</td>
                                                 <td> {{ $buku->penerbit}}</td>
+                                                <td > {{ $buku->sinopsis}}</td>
                                                 <td><img src="{{ asset('uploads/' . $buku->file_path) }}" width="80"></td>
-                                                <td>
+                                                <td nowrap>
                                                     <a href="{{ route('books.edit', $buku->id)}}"><i class="fas fa-edit"></i></a>
                                                     |
                                                     <a href="{{ route('books.destroy', $buku->id)}}"><i class="fas fa-trash" style="color:red"></i></a>

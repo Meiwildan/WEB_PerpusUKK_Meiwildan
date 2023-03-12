@@ -28,7 +28,7 @@
         <!-- END MENU SIDEBAR-->
 
         <!-- PAGE CONTAINER-->
-        <div class="page-container">
+        <div  class="page-container">
             <!-- HEADER DESKTOP-->
             @include ('partials/header');
             <!-- HEADER DESKTOP-->

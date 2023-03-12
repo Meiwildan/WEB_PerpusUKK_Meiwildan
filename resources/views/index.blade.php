@@ -1,8 +1,6 @@
 @extends('layouts.main')
 
 @section ('container')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
     
     <div class="container">
         <div class="row">
@@ -10,7 +8,7 @@
                 <h1 class="mb-3" style="color:white">Halaman Beranda</h1>
                 <form action="/" method="GET">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search book title..." name="search">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
                         <button class="btn btn-success" type="submit" id="button-addon2">Search</button>
                     </div>
                 </form>
@@ -24,7 +22,7 @@
                     <div class="card-body">
                       <h5 class="card-title">{{ $book->judul_buku}}</h5>
                       <p class="card-text">{{ $book->pengarang}}</p>
-                      <a href="{{ route('books.detail', $book->id)}}"class="btn btn-primary">Lihat Buku</a>
+                      <a href="{{ route('books.detail', $book->id)}}" class="btn btn-danger w-100" style="background-color: #302b63; border: 2px solid rgba(255, 255, 255, 0.247); margin-top: 10px;">Lihat Buku</a>
                     </div>
                   </div>
                </div>
@@ -50,26 +48,4 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        $('search').on('keyup', function() {
-            $value = $(this).val();
-            $.ajax({
-                type: 'get',
-                url: '{{ URL::to('search') }}',
-                data: {
-                    'search': $value
-                },
-                success: function(data) {
-                    console.log(data);
-                }
-            });
-        })
-    </script>
-    <script type="text/javascript">
-        $.ajaxSetup({
-            headers: {
-                'csrftoken': '{{ csrf_token() }}'
-            }
-        });
-    </script>
     @endsection

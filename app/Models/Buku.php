@@ -11,7 +11,7 @@ class Buku extends Model
     use HasFactory;
     protected $table = 'books';
     protected $primaryKey = 'id';
-    protected $fillable = ['id', 'judul_buku', 'jenis_buku', 'pengarang', 'tahun_terbit', 'penerbit', 'file_path', 'created_at', 'updated_at'];
+    protected $fillable = ['id', 'judul_buku', 'jenis_buku', 'pengarang', 'tahun_terbit', 'penerbit', 'sinopsis', 'file_path', 'created_at', 'updated_at'];
 
     public function detailBuku($id)
     {

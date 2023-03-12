@@ -8,8 +8,8 @@
                         <div class="row">
                             <div class="col-lg-12">
                             <div class="card">
-                                    <div class="card-header">
-                                        <strong>Form Edit</strong> Buku
+                                    <div class="card-header" style="background-color: #302b63">
+                                        <p style="color: white"><strong>Form Edit</strong> Buku</p>
                                     </div>
                                     <div class="card-body card-block">
                                         <form action="{{ route('books.update', $books->id)}}" enctype="multipart/form-data" method="post" class="">
@@ -19,7 +19,7 @@
                                                 <input type="text" name="judul_buku" class="form-control" value="{{ $books->judul_buku}}">
                                             </div>
                                             <div class="form-group">
-                                                <label class=" form-control-label">jenis_buku</label>
+                                                <label class=" form-control-label">Jenis buku</label>
                                                 <input type="text" name="jenis_buku" class="form-control" value="{{ $books->jenis_buku}}">
                                             </div>
                                             <div class="form-group">
@@ -28,20 +28,23 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="nf-password" class=" form-control-label">Tahun Terbit</label>
-                                                <input type="text" name="tahun_terbit" class="form-control" value="{{ $books->tahun_terbit}}">
+                                                <input type="number" name="tahun_terbit" class="form-control" value="{{ $books->tahun_terbit}}">
                                             </div>
                                             <div class="form-group">
                                                 <label for="nf-password" class=" form-control-label">Penerbit</label>
                                                 <input type="text" name="penerbit" class="form-control" value="{{ $books->penerbit}}">
                                             </div>
                                             <div class="form-group">
+                                                <label>Masukkan Sinopsis</label>
+                                                <textarea  type="text" name="sinopsis" class="form-control" value="{{ $books->sinopsis}}">{{ $books->sinopsis}}</textarea>
+                                            </div>
+                                            <div class="form-group">
                                                 <label for="nf-password" class=" form-control-label">Gambar Buku</label>
                                                 <input type="file" name="file_path" class="form-control" {{ $books->file_path}}> 
                                             </div>
-                                            <div class="card-footer">
-                                                <button type="submit" class="btn btn-primary btn-sm">
-                                                    <i class="fa fa-dot-circle-o"></i> Ubah
-                                                </button>
+                                            <div class="card-footer" style="background-color: #302b63">
+                                                <button type="submit" class="btn btn-success shadow-sm">Ubah</button>
+                                                <a href="{{ route('books.index') }}" class="btn btn-danger shadow-sm">Kembali</a>
                                             </div>
                                         </form>
                                     </div>

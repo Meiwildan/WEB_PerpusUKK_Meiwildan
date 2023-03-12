@@ -38,6 +38,7 @@
     <th>Pengarang</th>
     <th>Tahun Terbit</th>
     <th>Penerbit</th>
+    <th>Sinopsis</th>
   </tr>
   @php
       $no=1;
@@ -50,6 +51,7 @@
     <td> {{ $buku->pengarang}}</td>
     <td> {{ $buku->tahun_terbit}}</td>
     <td> {{ $buku->penerbit}}</td>
+    <td> {{ $buku->sinopsis}}</td>
   </tr>
   @endforeach
   

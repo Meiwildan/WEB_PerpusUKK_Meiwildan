@@ -56,6 +56,7 @@ class BukuController extends Controller
             'pengarang' => 'required',
             'tahun_terbit' => 'required|max:4',
             'penerbit' => 'required',
+            'sinopsis' => 'required',
             'file_path' => 'required',
         ]);
 
@@ -139,6 +140,7 @@ class BukuController extends Controller
                 'pengarang' => $request->pengarang,
                 'tahun_terbit' => $request->tahun_terbit,
                 'penerbit' => $request->penerbit,
+                'sinopsis' => $request->sinopsis,
             ]);
             return redirect()->route('books.index')->with('success', 'Buku Berhasil di Ubah!');
         } else {
@@ -151,6 +153,7 @@ class BukuController extends Controller
                 'pengarang' => $request->pengarang,
                 'tahun_terbit' => $request->tahun_terbit,
                 'penerbit' => $request->penerbit,
+                'sinopsis' => $request->sinopsis,
                 'file_path' => $request->file('file_path')->store('books'),
             ]);
             return redirect()->route('books.index')->with('success', 'Buku Berhasil di Ubah!');
@@ -183,11 +186,12 @@ class BukuController extends Controller
     public function detail($id)
     {
         $books = Buku::where('id', $id)->first();
-        $title = Buku::all();
+        $title = 'Tampil Buku';
         return view('detailBuku', [
             'books' => $books,
             'title' => $title
         ]);
+        
     }
 
     public function exportExcel()

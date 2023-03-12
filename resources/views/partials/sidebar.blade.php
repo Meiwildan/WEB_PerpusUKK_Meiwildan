@@ -1,6 +1,6 @@
 <!-- MENU SIDEBAR-->
-<aside class="menu-sidebar d-none d-lg-block" style="background-color: #2193b0">
-            <div class="logo"  style="background-color:#2193b0">
+<aside class="menu-sidebar d-none d-lg-block" style="background-color: #24243e">
+            <div class="logo"  style="background-color:#24243e">
                 <a href="#">
                     <img src="../../fotoBuku/reado.png" width="180" alt="..." />
                 </a>
@@ -8,9 +8,9 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub">
-                            <a class="js-arrow" href="{{ route ('home') }}" style="color:white">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        <li>
+                            <a href="/" style="color:white">
+                                <i class="fas fa-book"></i>Dashboard</a>
                         </li>
                         <li>
                             <a href="{{ route ('books.index')}}" style="color:white">
